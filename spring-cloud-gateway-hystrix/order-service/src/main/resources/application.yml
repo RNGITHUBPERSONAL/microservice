@@ -1,0 +1,36 @@
+server:
+  port: 9192
+spring:
+  zipkin:
+    base-url: http://localhost:9411/
+  h2:
+    console:
+      enabled: true
+  application:
+    name: order-service
+logging:
+  file: C:/Users/Basant.Hota/Desktop/oms.log
+
+#spring:
+#  application:
+#    name: your-service-name  # The name of your own service
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://eureka-server-host:8761/eureka/  # URL of the Eureka Server
+#    fetchRegistry: true  # Fetch the registry from the server
+#    registerWithEureka: true  # Register this service with the server
+#    instanceInfoReplicationIntervalSeconds: 30  # Interval at which to replicate instance information to the server
+#
+## Health check configuration
+#management:
+#  endpoint:
+#    health:
+#      show-details: always
+#
+## Optional properties
+#server:
+#  port: 8080  # Port on which your service runs
+#
+## Other configuration options
